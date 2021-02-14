@@ -31,7 +31,6 @@ gem 'iex-ruby-client'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'bootstrap'
-gem 'devise-bootstrap-views', '~> 1.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
