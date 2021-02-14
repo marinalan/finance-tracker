@@ -21,12 +21,17 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'activesupport', '~> 6.1', '>= 6.1.2.1'
 gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'iex-ruby-client'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+gem 'bootstrap'
+gem 'devise-bootstrap-views', '~> 1.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
