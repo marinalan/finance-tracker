@@ -2,6 +2,22 @@
 
 <div class="row justify-content-center">
   <div class="col-sm-9">
+    <div class="search-area">
+      <h3>Search Friends</h3>
+      <%= form_tag search_friend_path, remote: true, method: :get do %>
+        <div class="input-group mb-3">
+          <%= text_field_tag :friend, params[:friend], placeholder: "Name or email", autofocus: true, class: "form-control form-control-lg" %>
+          <div class="input-group-append">
+            <%= button_tag type: :submit, class: "btn btn-success", id: "button-addon2" do %>
+              <%= fa_icon 'search 2x' %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div id="results">
+
+    </div>
     <% if !@friends.empty? %>
       <%= render 'friends/list' %>
     <% end %>
